@@ -10,9 +10,9 @@ declare global {
 
 let didIncludeOnce = false;
 
-const DEFAULT_SD = 'https://www.cte.ikeadt.com/global/assets/customer-service/knowledge/km-direflow-webcomponent-sd.js';
-const DEFAULT_CE = 'https://www.cte.ikeadt.com/global/assets/customer-service/knowledge/km-direflow-webcomponent-ce.js';
-const DEFAULT_AD = 'https://www.cte.ikeadt.com/global/assets/customer-service/knowledge/km-direflow-custom-elements-adapter.js';
+const DEFAULT_SD = 'https://www.ikea.com/global/assets/customer-service/knowledge/km-direflow-webcomponent-sd.js';
+const DEFAULT_CE = 'https://www.ikea.com/global/assets/customer-service/knowledge/km-direflow-webcomponent-ce.js';
+const DEFAULT_AD = 'https://www.ikea.com/global/assets/customer-service/knowledge/km-direflow-custom-elements-adapter.js';
 
 const includePolyfills = async (
   options: { usesShadow: boolean },

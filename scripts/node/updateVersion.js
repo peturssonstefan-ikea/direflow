@@ -55,21 +55,22 @@ const updateLink = () => {
 };
 
 const updateVersion = (version) => {
-  rootPackage.version = version;
-  componentPackage.version = version;
-  scriptPackage.version = version;
+  var vetaVersion = version+"-veta" 
+  rootPackage.version = vetaVersion;
+  componentPackage.version = vetaVersion;
+  scriptPackage.version = vetaVersion;
 
   componentPackageJs = componentPackageJs
-    .replace(componentRegex, componentReplace(version))
-    .replace(scriptsRegex, scriptsReplace(version));
+    .replace(componentRegex, componentReplace(vetaVersion))
+    .replace(scriptsRegex, scriptsReplace(vetaVersion));
 
   componentPackageTs = componentPackageTs
-    .replace(componentRegex, componentReplace(version))
-    .replace(scriptsRegex, scriptsReplace(version));
+    .replace(componentRegex, componentReplace(vetaVersion))
+    .replace(scriptsRegex, scriptsReplace(vetaVersion));
 
   console.log('');
   console.log('Version have updated.');
-  console.log(`New version: ${version}`);
+  console.log(`New version: ${vetaVersion}`);
   console.log('');
 };
 

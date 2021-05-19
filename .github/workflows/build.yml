@@ -18,15 +18,15 @@ jobs:
     - name: Prepare
       run: |
         sudo apt-get install lsof
-        npm install codecov -g
+    # npm install codecov -g
 
     - name: Install
       run: |
         npm run clean:all
         npm run install:all
 
-    - name: Codecov
-      run: codecov -t ${{ secrets.CODECOV_TOKEN }}
+    # - name: Codecov
+    #   run: codecov -t ${{ secrets.CODECOV_TOKEN }}
 
     - name: Build
       run: |

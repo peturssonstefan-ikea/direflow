@@ -1,8 +1,12 @@
 {
-  "name": "direflow-cli",
-  "version": "3.5.4",
+  "name": "@peturssonstefan-ikea/direflow-cli",
+  "version": "3.5.6",
   "description": "Official CLI for Direflow",
   "main": "dist/index.js",
+  "publishConfig": {
+    "cache": "~/.npm",
+    "registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest --env=jest-environment-jsdom-fourteen",
@@ -26,7 +30,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:Silind-Software/direflow.git"
+    "url": "git@github.com:peturssonstefan-ikea/direflow.git"
   },
   "keywords": [
     "cli",
