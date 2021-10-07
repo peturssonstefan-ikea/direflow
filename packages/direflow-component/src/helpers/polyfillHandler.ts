@@ -71,7 +71,7 @@ const includePolyfills = async (
   }
 
   if (!disableAD) {
-    scriptsList.push(asyncScriptLoader(useAD || DEFAULT_AD, 'wcPolyfillsLoaded'));
+    //scriptsList.push(asyncScriptLoader(useAD || DEFAULT_AD, 'wcPolyfillsLoaded'));
   }
 
   try {
