@@ -12,17 +12,17 @@ const iconLoaderPlugin: PluginRegistrator = (
     return;
   }
 
-  if (plugin?.options?.packs.includes('material-icons')) {
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'https://fonts.googleapis.com/icon?family=Material+Icons';
+  // if (plugin?.options?.packs.includes('material-icons')) {
+  //   const link = document.createElement('link');
+  //   link.rel = 'stylesheet';
+  //   link.href = 'https://fonts.googleapis.com/icon?family=Material+Icons';
 
-    const insertionPoint = document.createElement('span');
-    insertionPoint.id = 'direflow_material-icons';
-    insertionPoint.appendChild(link);
+  //   const insertionPoint = document.createElement('span');
+  //   insertionPoint.id = 'direflow_material-icons';
+  //   insertionPoint.appendChild(link);
 
-    return [app, insertionPoint];
-  }
+  //   return [app, insertionPoint];
+  // }
 };
 
 export default iconLoaderPlugin;
